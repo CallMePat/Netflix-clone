@@ -1,0 +1,89 @@
+.App {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  height: 80px;
+  z-index: 1;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.Apps{
+  background-color: black;
+}
+
+.BGC {
+  background-color: #111;
+}
+
+.row_posters::-webkit-scrollbar{
+  display: none;
+}
+
+.row_poster {
+  max-height: 100px;
+  object-fit: contain;
+  margin-right: 10px;
+  width: 100%;
+  transition: transform 450ms;
+}
+
+.row_poster:hover{
+  transform: scale(1.08);
+  opacity: 1;
+}
+
+.row_PosterLarge {
+  max-height: 250px;
+}
+
+.row_PosterLarge:hover{
+  transform: scale(1.09);
+  opacity: 1;
+}
+
+.loginscreen{
+  position: relative;
+  height: 100%;
+  background: url("https://www.slashgear.com/img/gallery/netflix-4k-streaming-on-macos-big-sur-to-require-a-t2-security-chip/intro-import.jpg")
+  center no-repeat;
+  background-size: cover;
+
+}
+
+.loginscreenGradient{
+  width: 100%;
+  z-index: 1;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top, 
+    rgba(0, 0, 0, 0.8), 0, 
+    rgba(0, 0, 0, 0), 60%, 
+    rgba(0, 0, 0, 0.8), 100%
+    );
+}
+
+.loginScreenBody{
+  position: absolute;
+  top: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 20px;
+  z-index: 1;
+  color: white;
+}
+
+.loginScreenBody > h1 {
+  font-size: 3.125rem;
+  margin-bottom: 20px;
+  
+}
+
+.loginScreenBody > h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
