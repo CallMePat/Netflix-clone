@@ -9,7 +9,7 @@
   transition: all 0.5s;
 }
 
-.Apps{
+.Apps {
   background-color: black;
 }
 
@@ -17,7 +17,7 @@
   background-color: #111;
 }
 
-.row_posters::-webkit-scrollbar{
+.row_posters::-webkit-scrollbar {
   display: none;
 }
 
@@ -29,7 +29,7 @@
   transition: transform 450ms;
 }
 
-.row_poster:hover{
+.row_poster:hover {
   transform: scale(1.08);
   opacity: 1;
 }
@@ -38,34 +38,36 @@
   max-height: 250px;
 }
 
-.row_PosterLarge:hover{
+.row_PosterLarge:hover {
   transform: scale(1.09);
   opacity: 1;
 }
 
-.loginscreen{
+.loginscreen {
   position: relative;
   height: 100%;
   background: url("https://www.slashgear.com/img/gallery/netflix-4k-streaming-on-macos-big-sur-to-require-a-t2-security-chip/intro-import.jpg")
-  center no-repeat;
+    center no-repeat;
   background-size: cover;
-
 }
 
-.loginscreenGradient{
+.loginscreen_Gradient {
   width: 100%;
   z-index: 1;
   height: 100vh;
   background: rgba(0, 0, 0, 0.4);
   background-image: linear-gradient(
-    to top, 
-    rgba(0, 0, 0, 0.8), 0, 
-    rgba(0, 0, 0, 0), 60%, 
-    rgba(0, 0, 0, 0.8), 100%
-    );
+    to top,
+    rgba(0, 0, 0, 0.8),
+    0,
+    rgba(0, 0, 0, 0),
+    60%,
+    rgba(0, 0, 0, 0.8),
+    100%
+  );
 }
 
-.loginScreenBody{
+.loginScreen_Body {
   position: absolute;
   top: 30%;
   margin-left: auto;
@@ -74,16 +76,284 @@
   padding: 20px;
   z-index: 1;
   color: white;
+  left: 0;
+  right: 0;
 }
 
-.loginScreenBody > h1 {
+.loginScreen_Body > h1 {
   font-size: 3.125rem;
   margin-bottom: 20px;
-  
+  line-height: 3.4rem;
 }
 
-.loginScreenBody > h2 {
+.loginScreen_Body > h2 {
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 30px;
+}
+
+.loginScreen_Body > h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.loginScreen_input {
+  margin: 20px;
+}
+.loginScreen_input > form > input {
+  padding: 10px;
+  outline-width: 0;
+  height: 3.2rem;
+  width: 30%;
+  border: none;
+  max-width: 600px;
+}
+
+.loginScreen_getStarted {
+  padding: 14px 20px;
+  font-size: 1rem;
+  background-color: #e50914;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.signUpScreen {
+  padding: 5%;
+  background-color: rgba(0, 0, 0, 0.85);
+  margin-left: 30rem;
+  margin-right: 30rem;
+}
+
+.signUpScreen > form > h1 {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.signUpScreen > form {
+  display: grid;
+  flex-direction: column;
+}
+
+.signUpScreen > form > input {
+  outline-width: 0;
+  height: 40px;
+  margin-bottom: 14px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 15px;
+  color: #111;
+}
+
+.signUpScreen > form > button {
+  padding: 16px 20px;
+  font-size: 1rem;
+  color: white;
+  border-radius: 5px;
+  background-color: #e50914;
+  border: none;
+}
+
+.signUpScreen > form > h4 {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.signUpScreen_gray {
+  color: gray;
+}
+
+.signUpScreen_link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.profileScreen {
+  height: 100vh;
+  color: white;
+}
+
+.profileScreen_body {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8%;
+  max-width: 800px;
+}
+
+.profileScreen_info {
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-start;
+  align-items: flex-start;
+}
+
+.profileScreen_info > img {
+  height: 100px;
+}
+
+.profileScreen_details {
+  color: white;
+  margin-left: 25px;
+  flex: 1;
+}
+
+.profileScreen_body > h1 {
+  font-size: 60px;
+  font-weight: 400;
+  border-bottom: 1px solid #282c2d;
+  margin-bottom: 20px;
+}
+
+.profileScreen_details > h2 {
+  background-color: gray;
+  padding: 15px;
+  font-size: 15px;
+  padding-left: 20px;
+}
+
+.profileScreen_signOut {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #e50914;
+  color: white;
+  margin-top: 5%;
+  width: 100%;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.profileScreen_plans {
+  margin-top: 20px;
+}
+
+.profileScreen_plans > h3 {
+  border-bottom: 1px solid #282c2d;
+  padding-bottom: 10px;
+}
+
+.plansScreen_plan {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  opacity: 0.8;
+}
+
+.plansScreen_plan:hover {
+  opacity: 1;
+}
+
+.plansScreen_plan > button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #e50914;
+}
+
+.plansScreen_plan--disabled > button {
+  background-color: gray !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query for small screens */
+@media screen and (max-width: 1024px) {
+  .signUpScreen {
+    padding: 5%;
+    margin-left: 18rem;
+    margin-right: 18rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .loginscreen {
+    background-position: top; /* Change background position for better visibility */
+  }
+
+  .loginScreen_Body {
+    top: 40%; /* Adjust the top position */
+  }
+
+  .loginScreen_Body > h1 {
+    font-size: 2.5rem; /* Reduce font size for smaller screens */
+    line-height: 3rem; /* Adjust line height */
+  }
+
+  .loginScreen_Body > h2 {
+    font-size: 1.5rem; /* Adjust font size */
+    margin-bottom: 20px; /* Modify margin */
+  }
+
+  .loginScreen_Body > h3 {
+    font-size: 1.1rem; /* Adjust font size */
+  }
+
+  .loginScreen_input > form > input {
+    width: 70%; /* Increase input width for better usability on smaller screens */
+    max-width: none; /* Remove max-width constraint */
+  }
+  .signUpScreen {
+    padding: 7%;
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+  .profileScreen_body > h1 {
+    font-size: 50px; /* Adjust heading font size */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .profileScreen_body {
+    width: 90%; /* Adjust width for smaller screens */
+    padding: 5%;
+  }
+
+  .profileScreen_body > h1 {
+    font-size: 40px; /* Adjust heading font size */
+  }
+
+  .profileScreen_info {
+    gap: 1rem;
+  }
+
+  .profileScreen_details {
+    margin-left: 0; /* Reset margin for details */
+    flex: none; /* Prevent details from taking all available space */
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .loginScreen_content {
+    display: flex;
+    width: 100%;
+  }
+
+  .loginScreen_input > form > input {
+    font-size: 0.8rem;
+  }
+
+  .loginScreen_getStarted {
+    font-size: 0.7rem;
+    padding: 8px 15px;
+    width: 35%;
+  }
+
+  .signUpScreen {
+    padding: 15%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
