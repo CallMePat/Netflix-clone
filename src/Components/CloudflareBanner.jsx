@@ -1,4 +1,3 @@
-// CloudflareBanner.jsx
 import React, { useEffect, useState } from "react";
 import CloudflareVideoPlayer from "./Screens/CloudflareVideoPlayer";
 
@@ -11,8 +10,7 @@ const CloudflareBanner = ({ videos }) => {
 
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % videos.length);
-    }, 4000); // Change every 4 seconds
-
+    }, 4000);
     return () => clearInterval(interval);
   }, [videos]);
 
@@ -21,7 +19,7 @@ const CloudflareBanner = ({ videos }) => {
   const video = videos[currentIndex];
 
   const handlePlayClick = () => {
-    setSelectedVideoId(video.uid); // Adjust based on your video structure
+    setSelectedVideoId(video.uid);
   };
 
   return (
@@ -61,13 +59,6 @@ pb-2 hover:text-black hover:bg-[#e6e6e6] transition-all duration-200"
         </div>
         <p className="w-96 text-sm mt-4">{video.meta.description}</p>
       </div>
-      {/* <div
-          className="h-64"
-          style={{
-            backgroundImage:
-              "linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111)",
-          }}
-        /> */}
 
       {selectedVideoId && (
         <CloudflareVideoPlayer

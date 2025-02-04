@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Nav } from "../Nav";
-import { Banner } from "../Banner";
 import requests from "../../Request";
 import { Row } from "../Row";
 import CloudflareBanner from "../CloudflareBanner";
@@ -47,7 +46,6 @@ export const HomeScreen = () => {
     <div className="">
       <Nav />
       <CloudflareBanner videos={videos} />
-      {/* <Banner /> */}
 
       <Row
         title="NETFLIX ORGINALS"
