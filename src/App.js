@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import { HomeScreen } from "./Components/Screens/HomeScreen";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -7,6 +7,7 @@ import { ProfileScreen } from "./Components/Screens/ProfileScreen";
 import { auth } from "./firebase";
 import { login, logout, selectUser } from "./features/user/userSlice";
 import { useDispatch, useSelector } from "react-redux";
+
 
 function App() {
   const user = useSelector(selectUser);
@@ -31,6 +32,8 @@ function App() {
     return unsubscribe;
 
   }, [dispatch]);
+
+
   return (
     <div className="BGC">
       <Router>
