@@ -68,9 +68,9 @@ A full-featured Netflix clone built with modern web technologies. This project a
 - You may need to obtain a free API key from [The Movie Database (TMDb)](https://www.themoviedb.org/documentation/api) for movie data.
 - Update your `.env` file with the TMDb API key and other required secrets.
 
-## Demo video
-[![Watch the demo](https://img.youtube.com/vi/o1cHKJbdh2g/0.jpg)](https://youtu.be/o1cHKJbdh2g)
+## 🎥 Demo Video
 
+[![Watch the demo](https://img.youtube.com/vi/o1cHKJbdh2g/0.jpg)](https://youtu.be/o1cHKJbdh2g)
 
 ## Contributing
 
