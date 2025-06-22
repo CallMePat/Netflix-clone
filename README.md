@@ -1,46 +1,86 @@
-# Getting Started with Create React App and Redux
+# Netflix Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+A full-featured Netflix clone built with modern web technologies. This project aims to replicate the core functionality and user experience of Netflix, including user authentication, movie browsing, watchlists, and video streaming.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- 🔐 **User Authentication**: Secure signup, login, and logout functionality.
+- 🎬 **Movie & TV Show Catalog**: Browse and search a variety of movies and TV shows.
+- ⭐ **Watchlist**: Add movies and shows to your personal watchlist.
+- 📺 **Video Streaming**: Stream trailers or full movies (demo/sample content).
+- 🔍 **Search**: Search for your favorite movies and TV shows.
+- 🎨 **Responsive UI**: Clean, modern, and responsive design.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React.js, Redux, Tailwind CSS (or other CSS framework)
+- **Backend**: Node.js, Express.js, MongoDB
+- **Authentication**: JWT, bcrypt
+- **API**: TMDb API or custom REST API
+- **Deployment**: Vercel, Heroku, or Netlify
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js >= 14.x
+- npm or yarn
+- MongoDB database (local or cloud)
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/CallMePat/Netflix-clone.git
+    cd Netflix-clone
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Set up environment variables:**
+    - Copy `.env.example` to `.env` and fill in the required values (API keys, DB connection, etc).
 
-### `npm run eject`
+4. **Start the development server:**
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. Open [http://localhost:3000](http://localhost:3000) to view the app.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Folder Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+/client      # Frontend React app
+/server      # Backend Express server
+/public      # Static assets
+.env         # Environment variables
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## API Configuration
 
-## Learn More
+- You may need to obtain a free API key from [The Movie Database (TMDb)](https://www.themoviedb.org/documentation/api) for movie data.
+- Update your `.env` file with the TMDb API key and other required secrets.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Demo video
+[![Watch the demo](https://img.youtube.com/vi/o1cHKJbdh2g/0.jpg)](https://youtu.be/o1cHKJbdh2g)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome!  
+Feel free to check [issues page](https://github.com/CallMePat/Netflix-clone/issues).
+
+## License
+
+[MIT](LICENSE)
+
+---
+
+> _This project is for educational purposes and does not host or distribute pirated content. All media is sourced from public APIs or for demonstration only._
